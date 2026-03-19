@@ -36,7 +36,7 @@ const env = getEnvironment();
 
 new WebAppStack(app, 'WebAppStack', {
 	env,
-	buildOutputPath: '<PATH_TO_YOUR_APP>',
+	buildOutputPath: '../client/dist',
 	mode: 'static',
 	enableAuth: true,
 });

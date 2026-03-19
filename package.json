@@ -7,9 +7,9 @@
 	"scripts": {
 		"build": "tsc",
 		"watch": "tsc -w",
-		"bootstrap": "cdk bootstrap",
-		"deploy": "cdk deploy --all",
-		"destroy": "cdk destroy --all"
+		"bootstrap": "AWS_PROFILE= cdk bootstrap",
+		"deploy": "AWS_PROFILE= cdk deploy",
+		"destroy": "AWS_PROFILE= cdk destroy"
 	},
 	"devDependencies": {
 		"@types/node": "^24.10.1",
